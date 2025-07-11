@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">//mobile devices
+    <title>Welcome to Voting System</title>
+    <style>
+        body {
+    
+            background-image: url('https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/10/16044143/M187_Digital-voting-header.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            text-align:  center;
+            background-position: top;
+        }
+        #welcome {
+            padding: 50px;
+        }
+        .slogan {
+            margin-top: 20px;
+            font-style: italic;
+            color: brown;
+        }
+        #enterButton {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h1>Welcome to Online Voting System</h1>
+        <h3>Make your voice heard!</h3>
+        <div class="slogan">
+            <h2><strong>"Voting is not only our right—it is our power."</strong></h2>
+        </div>
+        <button id="enterButton" onclick="redirectToLoginPage()">Enter</button>
+    </div>
+
+    <script>
+        function redirectToLoginPage() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

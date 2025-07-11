@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voting System - Registrstion</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    
+</head>
+<body>
+
+    <style>
+        body {
+            background-image: url('https://www.desktopbackground.org/download/o/2011/04/22/191874_alfa-img-showing-hd-writing-backgrounds_1920x1080_h.jpg');
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+        }
+
+        
+        #address{
+            width: 25%;
+        }
+        #imagepart{
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+        }
+
+        #role{
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+
+        }
+
+        #role select{
+
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+    </style>
+
+   <center>
+        
+    <div id="headersection">
+        <h1>Online voting System</h1> 
+        <hr>
+    </div>
+    <div id="bodysection">
+        <h3>Registrstion</h3>
+        <form action="../api/register.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Enter name">
+            <input type="number" name="mobile" placeholder="Enter mobile"><br><br>
+            <input type="password" name="password" placeholder="password">
+            <input type="password" name="cpassword" placeholder="Confirm password"><br><br>
+            <input id="address" type="text" name="address" placeholder="Address"><br><br>
+            <label for="pincode">Pin Code:</label>
+            <input type="text" name="pincode" required>
+            <br><br>
+            
+            <div id="imagepart">
+                Upload image: <input type="file" name="photo" value="30000"><br><br>
+            </div>
+    
+        <br>
+
+        <div id="role">
+            Select Your Role: <select name="role">
+                <option value="1">Voter</option>
+                <option value="2">Candidate</option>
+                </select>
+
+        </div>
+        
+            
+    <br>
+                <button style=" padding: 5px;
+                                font-size: 15px;
+                                background-color: #3498db;
+                                color: white;
+                                border-radius: 5px;">
+            Register</button><br><br>
+                Already user? <a href="../index.html">Login here</a> 
+        </form>
+    </div>
+</center>
+    </body>
+</html>

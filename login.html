@@ -1,0 +1,41 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <style>
+        body {
+    
+            background-image: url('https://www.shutterstock.com/image-photo/woman-using-laptop-searching-web-260nw-672387517.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            text-align:  center;
+            background-position: top;
+        }
+    </style>
+    
+</head>
+<body>
+    <center>
+    <div id="headersection">
+        <h1>Online voting System</h1> 
+        <hr>
+    </div>
+    
+    <div id="bodysection">
+        <form action="api/login.php" method="POST">
+            <h1>Login</h1>
+            <input type="number" name="mobile" placeholder="Enter Mobile"><br><br>
+            <input type="password" name="password" placeholder="Enter password"><br><br>
+            <select id="dropbox" name="role">
+                <option value="1">Voter</option>
+                <option value="1">Group</option>
+            </select><br><br>
+            <button id="Loginbtn">Login</button><br><br>
+            New user? <a href="routes/register.html">Register here</a>
+
+            </form>
+
+    </div>
+</center>
+    
+    
+</body>
+</html>
